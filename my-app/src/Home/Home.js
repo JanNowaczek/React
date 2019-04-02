@@ -1,4 +1,4 @@
-import Reack from 'react'
+import React from 'react'
 
 const Home = (props) => (
     <div>
@@ -6,4 +6,4 @@ const Home = (props) => (
     </div>
 )
 
-export default Homey
+export default Home

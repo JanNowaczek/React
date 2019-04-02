@@ -1,32 +1,28 @@
 import React from 'react'
+import{ BrowserRouter as Router, Rute, Link } from "react-router-dom";
 
-import Calculator from './Calculator'
+import Calculators from './Calculators'
 import Home from './Home'
 
-const numbers = [
-  { a: 5, b: 10 },
-  { a: 7, b: 12 },
-  { a: 3, b: 11 },
-  { a: 0, b: 1 },
-]
 
 const App = () => {
   return (
-    <div>
-        <Home 
-            
-        />
-      {
-        numbers.map(
-          element => (
-            <Calculator
-              a={element.a}
-              b={element.b}
-            />
-          )
-        )
-      }
-    </div>
+    <Router>
+      <div>
+        <ul>
+          <li>
+            <link to="/">Home</link>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <link to="/calculators"> components={Calculators}</link>
+          </li>
+        </ul>
+      </div>
+      <Route exact={true} path={"/"} component={Home} />
+      <Route path={"/calculators"} component={Calculators} />
+    </Router>
   )
 }
 
