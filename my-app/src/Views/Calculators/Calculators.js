@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Calculator from '../Calculator/Calculator';
+import Calculator from '../../Components/Calculator'
 
 const Calculators = (props) => (
     <div>

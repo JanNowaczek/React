@@ -1,8 +1,8 @@
 import React from 'react'
-import{ BrowserRouter as Router, Rute, Link } from "react-router-dom";
+import{ BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import Calculators from './Calculators'
-import Home from './Home'
+import Calculators from './Views/Calculators'
+import Home from './Views/Home'
 
 
 const App = () => {
